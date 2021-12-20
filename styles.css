@@ -1,0 +1,160 @@
+body
+{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, rgba(30,23,153,1) 0%, rgb(12, 12, 90) 35%, rgba(47,24,138,1) 100%);
+    color: white;
+}
+
+marquee
+{
+    background-color: rgba(65, 105, 225, 0.253);
+    color: white;
+    padding: 5px;
+    margin: 0px;
+}
+
+.main-body
+{
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.main-body-header
+{
+    text-align: center;
+}
+
+.header-line
+{
+    border-top: 10px solid royalblue;
+    width: 50%;
+    border-color: royalblue;
+}
+
+.notecard
+{
+    margin: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 1px grey;
+    width: 500px;
+}
+
+p
+{
+    font-size: larger;
+}
+
+.topnav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: linear-gradient(0deg, rgb(0, 49, 156) 0%, rgb(0, 102, 255) 100%);*/
+    background-color: rgba(65, 105, 225, 0.199);
+}
+
+.top-item
+{
+    /*background: linear-gradient(180deg, rgb(10, 166, 238) 33%, rgb(0, 132, 255) 100%);*/
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 1;
+    text-align: center;
+    height: fit-content;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+.top-center-item
+{
+    flex: 2;
+    background: transparent;
+    /*background-color: rgba(0, 0, 0, 0.459);*/
+    font-size: 150%;
+    border-radius: 5px;
+}
+
+a.top-item
+{
+    text-decoration: none;
+    transition: all 200ms linear;
+}
+
+a.top-item:hover
+{
+    background: transparent;
+    background-color: rgba(96, 79, 245, 0.185);
+    transition: all 200ms linear;
+}
+
+img
+{
+    float: right;
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background-color: rgba(0, 68, 255, 0.384);
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.main-container
+{
+    min-height: 100vh; /* will cover the 100% of viewport */
+    position: relative;
+}
+
+.content-wrap
+{
+    padding-bottom: 2.5rem;
+}
+
+.disco
+{
+    animation-name: lights;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    background-color: red;
+    border-radius: 50%;
+}
+
+@keyframes lights
+{
+    0%   {background-color:red;}
+    14%   {background-color:orange;}
+    28%   {background-color:yellow;}
+    42%   {background-color:green; transform: rotate(180deg) translateY(00px);; width: 50px; height: 50px; border-radius: 5%;}
+    56%   {background-color:blue;}
+    70%   {background-color:purple;}
+    84%   {background-color:indigo;}
+    100%   {background-color:red; width: 50px; height: 50px; border-radius: 50%; transform: rotate(360deg);}
+}
+
+.discot
+{
+    animation-name: lightst;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    background-color: rgba(65, 105, 225, 0.377);
+    border-radius: 5%;
+}
+
+@keyframes lightst
+{
+    42%   {transform: rotate(180deg) translateY(00px);; width: 50px; height: 50px; border-radius: 50%;}
+    100%   {width: 50px; height: 50px; border-radius: 5%; transform: rotate(360deg);}
+}

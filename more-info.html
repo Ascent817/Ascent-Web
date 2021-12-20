@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="./styles.css">
+            <link rel="stylesheet" href="https://use.typekit.net/tvl1alg.css">
+            <title>Pumped Hydropower Storage</title>
+            <link rel="icon" href="Asset 1.svg">
+        </head>
+        <body>
+            <div class="main-container">
+                <div class="content-wrap">
+                    <div class="topnav">
+                        <a class="top-item" href="./the-problem.html">The Problem</a>
+                        <a class="top-item" href="./more-info.html">More Info</a>
+                        <a href="index.html" class="top-item top-center-item">Pumped Hydropower Storage</a>
+                        <a class="top-item" href="./impacts.html">Impacts</a>
+                        <a class="top-item" href="./alternates.html">Alternates</a>
+                    </div>
+                    <div class="main-body">
+                        <h1 class="main-body-header">
+                            Information
+                            <hr class="header-line">
+                        </h1>
+                        <br>
+                        <p id="devpanel">
+                            00.00
+                        </p>
+                        <!--
+                        <div class="discot" style="width: 50px; height: 50px; padding: 10px; text-align: center; vertical-align: middle;">
+                            <img src="Asset 1.svg">
+                        </div>
+                        -->
+                        <div class="discot" style="width: 50px; height: 50px; text-align: center; vertical-align: middle;">
+                            <div class="discot" style="width: 50px; height: 50px; text-align: center; vertical-align: middle;">
+                                <div class="discot" style="width: 50px; height: 50px; text-align: center; vertical-align: middle;">
+                                    <div class="discot" style="width: 50px; height: 50px; text-align: center; vertical-align: middle;">
+                                        <div class="discot" style="width: 50px; height: 50px; text-align: center; vertical-align: middle;">
+                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+
+                var loop = true;
+                var isAuthorized = false;
+
+                if (document.cookie.search("authstatus=Authorized") != -1)
+                {
+                    var loop = false;
+                    isAuthorized = true;
+                }
+         
+                while (loop)
+                {
+                    let id = prompt("This page is not available. If you have access, enter a key id.", "");
+
+                    if (id == "9635" || id == "4567")
+                    {
+                        loop = false;
+                        isAuthorized = true;
+                        document.cookie = "authstatus=Authorized;";
+                    }
+                }
+
+                let devpanel = document.getElementById("devpanel");
+                devpanel.textContent = "Cookies Set: " + document.cookie;
+            </script>
+        </body>
+    </html>
